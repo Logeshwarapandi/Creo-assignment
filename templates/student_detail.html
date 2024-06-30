@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <p><strong>Name:</strong> {{ student.name }}</p>
+    <p><strong>Age:</strong> {{ student.age }}</p>
+    <p><strong>Email:</strong> {{ student.email }}</p>
+    <p><strong>City:</strong> {{ student.city }}</p>
+
+    <h2>Subject Marks</h2>
+    <table>
+        <tr>
+            <th>Language 1</th>
+            <th>Language 2</th>
+            <th>Acting</th>
+            <th>Dance</th>
+        </tr>
+        <tr>
+            <td>{{ subject_marks.language1 }}</td>
+            <td>{{ subject_marks.language2 }}</td>
+            <td>{{ subject_marks.acting }}</td>
+            <td>{{ subject_marks.dance }}</td>
+        </tr>
+    </table>
+</body>
+</html>
